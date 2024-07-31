@@ -1,0 +1,229 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffa500;
+}
+
+/* Typography */
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo a:hover {
+  color: #ffa500;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  transition: all 0.3s;
+}
+
+/* Animation for Hamburger Menu */
+.nav-links-mobile {
+  display: none;
+  position: fixed;
+  list-style: none;
+  text-decoration: none;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  background-color: #333;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-links-mobile li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links-mobile li a:hover {
+  color: #ffa500;
+}
+
+.nav-links-mobile.active {
+  transform: translateX(0);
+  display: flex;
+}
+
+/* Hamburger to X Transition */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links-mobile {
+    display: flex;
+    transform: translateX(100%);
+  }
+}
+
+/* Home Section */
+.home {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-align: center;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensure h2 is separate from the flex container */
+.home-content > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-text {
+  background-color: #f9f9f9; /* Light background color */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Space inside the container */
+  margin: 20px 0; /* Space outside the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  font-family: "M PLUS Rounded 1c", sans-serif; /* Consistent font */
+}
+
+.home-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between items */
+  width: 100%; /* Full width of the parent container */
+  height: 400px; /* Fixed height for consistency */
+  max-width: 1200px; /* Optional: limit maximum width */
+  margin: 0 auto; /* Center horizontally */
+  box-sizing: border-box; /* Include padding and border in width/height calculation */
+}
+
+.home-image {
+  flex: 30%; /* Fixed width of 30% of the container */
+  width: 100%;
+  border-radius: 15px;
+  height: 100%; /* Auto height to maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits within the specified dimensions */
+  margin-right: 40px; /* Space between image and text */
+}
+
+#typed-text {
+  font-size: 1.25rem; /* Slightly larger text */
+  font-weight: bold; /* Emphasize the text */
+  color: #333; /* Darker text color */
+  display: inline; /* Keep it inline with the surrounding text */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Ensure text doesn’t overflow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-flex {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .home-image,
+  #typed-text {
+    width: 100%; /* Full width on smaller screens */
+    height: auto;
+    margin: 10px 0;
+  }
+}
