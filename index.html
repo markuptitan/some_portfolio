@@ -3,47 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samson Lukhele</title>
-    <!-- Font Preconnect and Link -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- Your CSS file -->
     <link rel="stylesheet" href="css/style.css" />
+    <title>S Lukhele - Portfolio</title>
   </head>
   <body>
     <header>
-      <nav>
-        <div class="container">
-          <h1 class="logo"><a href="#">S Lukhele</a></h1>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <!-- Mobile Navigation Links -->
-          <ul class="nav-links-mobile">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+      <div class="logo">
+        <h1>S Lukhele</h1>
+      </div>
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Services</a></li>
+          <li><a href="#skills">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+      <nav class="nav-mobile" id="nav-mobile">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
+    <section id="home">
+      <h1>
+        Hi. I&apos;m <span class="highlighted-text">Samson Lukhele.</span>
+      </h1>
+      <br />
+      <h2>My main focus is on: <span id="typed-text"></span></h2>
+      <br />
+      <h4>
+        I am an emerging web developer with a passion for creating dynamic and
+        responsive digital experiences. Driven by a deep curiosity for
+        technology and a commitment to continuous learning, I’m eager to master
+        new skills and explore innovative solutions. Although I’m still building
+        my expertise, I’m open to collaborative opportunities and excited to
+        bring fresh perspectives to projects.
+      </h4>
+    </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/index.js"></script>
   </body>
