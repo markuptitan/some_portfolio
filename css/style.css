@@ -172,6 +172,7 @@ header {
 .highlighted-text {
   background-color: #282c34;
   color: white;
+  border-radius: 5.75px;
 }
 
 h2,
@@ -180,6 +181,10 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+}
+
+#typed-text {
+  font-family: "Ubuntu Mono";
 }
 
 section {
@@ -339,4 +344,63 @@ section {
     flex: 1 1 80%;
     margin: 10px 0;
   }
+}
+
+#contact {
+  padding: 40px 20px;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-content li {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-content i {
+  margin-right: 15px;
+  font-size: 1.5em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-content a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.contact-content li:hover i {
+  color: #61dafb;
+  transform: scale(1.2);
+}
+
+.contact-content a:hover {
+  text-decoration: underline;
 }

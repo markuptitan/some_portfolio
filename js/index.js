@@ -17,11 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
       "Basketball.",
       "Learning.",
     ],
+    showCursor: false, // Hide cursor
     typeSpeed: 50, // Speed in milliseconds
     backSpeed: 25, // Speed of backspacing
     backDelay: 1000, // Delay before starting to backspace
     startDelay: 500, // Delay before typing starts
-    loop: true, // Loop indefinitely
+    loop: false, // Loop indefinitely
   };
   new Typed("#typed-text", options); // Correct selector
 });
