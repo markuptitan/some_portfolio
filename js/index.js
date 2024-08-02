@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Menu Toggle
   const menuToggle = document.getElementById("menu-toggle");
   const navMobile = document.getElementById("nav-mobile");
 
@@ -6,10 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.classList.toggle("open");
     navMobile.classList.toggle("active");
   });
-});
 
-document.addEventListener("DOMContentLoaded", () => {
-  let options = {
+  // Typed.js Initialization
+  const typedOptions = {
     strings: [
       "Web Development.",
       "DevOps.",
@@ -24,12 +24,28 @@ document.addEventListener("DOMContentLoaded", () => {
     startDelay: 500, // Delay before typing starts
     loop: false, // Loop indefinitely
   };
-  new Typed("#typed-text", options); // Correct selector
-});
+  new Typed("#typed-text", typedOptions);
 
-document.addEventListener("DOMContentLoaded", () => {
+  // Display Current Date
   const currentDateElement = document.getElementById("current-date");
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  const currentDate = new Date().toLocaleDateString(undefined, options);
+  const dateOptions = { year: "numeric", month: "long", day: "numeric" };
+  const currentDate = new Date().toLocaleDateString(undefined, dateOptions);
   currentDateElement.textContent = currentDate;
+
+  // Smooth Scrolling
+  const links = document.querySelectorAll("a[href^='#']");
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      const target = document.querySelector(link.getAttribute("href"));
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
 });
