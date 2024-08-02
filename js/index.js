@@ -25,3 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   new Typed("#typed-text", options); // Correct selector
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentDateElement = document.getElementById("current-date");
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  const currentDate = new Date().toLocaleDateString(undefined, options);
+  currentDateElement.textContent = currentDate;
+});
