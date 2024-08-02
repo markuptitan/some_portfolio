@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Display Current Date
   const currentDateElement = document.getElementById("current-date");
-  const dateOptions = { year: "numeric", month: "long", day: "numeric" };
+  const dateOptions = { year: "numeric", month: "long" };
   const currentDate = new Date().toLocaleDateString(undefined, dateOptions);
   currentDateElement.textContent = currentDate;
 
