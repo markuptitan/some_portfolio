@@ -2,7 +2,7 @@
 
 *Because I couldn't come up with a better name, I went with **Some Portfolio*** 😅
 
-Hey there! 👋 Welcome to my portfolio. You can check out the live version on [Netlify](http://markuptitan.netlify.ap). If you'd like to run it locally, here’s what you need to do:
+Hey there! 👋 Welcome to my portfolio. You can check out the live version on [Netlify](http://markuptitan.netlify.app). If you'd like to run it locally, here’s what you need to do:
 
 1. Make sure you have [Node.js](https://nodejs.org/en/download/package-manager) installed.
 2. Install `http-server` globally by running:
@@ -12,7 +12,7 @@ Hey there! 👋 Welcome to my portfolio. You can check out the live version on [
      cd some_portfolio
      http-server```
 
-My previous portfolio ([check it out here](https://markuptitan.github.io) was an experiment that, unfortunately, has some issues:
+My previous portfolio ([check it out here](https://markuptitan.github.io)) was an experiment that, unfortunately, has some issues:
 
 1. Routing problems causing broken links.
 2. Lacks project details.
