@@ -6,11 +6,12 @@ Hey there! 👋 Welcome to my portfolio. You can check out the live version on [
 
 1. Make sure you have [Node.js](https://nodejs.org/en/download/package-manager) installed.
 2. Install `http-server` globally by running:
-   ```
+   ```bash
      npm install -g http-server
      git clone https://github.com/markuptitan/some_portfolio
      cd some_portfolio
-     http-server```
+     http-server
+   ```
 
 My previous portfolio ([check it out here](https://markuptitan.github.io)) was an experiment that, unfortunately, has some issues:
 
